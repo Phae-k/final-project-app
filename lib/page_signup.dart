@@ -36,7 +36,7 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
-  // create controller for textfields
+  
   TextEditingController controller_username = TextEditingController();
   TextEditingController controller_password = TextEditingController();
   TextEditingController controller_confirm_password = TextEditingController();
@@ -71,7 +71,7 @@ class _SignupPageState extends State<SignupPage> {
                 child: Text("Username: "),
               ),
               SizedBox(
-                width: 240,
+                width: 230,
                 child: TextField(
                   controller: controller_username,
                 ),
@@ -89,7 +89,7 @@ class _SignupPageState extends State<SignupPage> {
                 child: Text("Password: "),
               ),
               SizedBox(
-                width: 240,
+                width: 230,
                 child: TextField(
                   obscureText: is_password_visible,
                   controller: controller_password,
@@ -105,6 +105,7 @@ class _SignupPageState extends State<SignupPage> {
               Spacer(),
             ],
           ),
+          
           Row(
             children: [
               Spacer(),
@@ -114,11 +115,12 @@ class _SignupPageState extends State<SignupPage> {
                 child: Text("Confirm Password: "),
               ),
               SizedBox(
-                  width: 240,
+                  width: 230,
                   child: TextField(
                     obscureText: is_confirm_password_visible,
                     controller: controller_confirm_password,
                   )),
+
               IconButton(
                   onPressed: () {
                     is_confirm_password_visible = !is_confirm_password_visible;
@@ -137,12 +139,9 @@ class _SignupPageState extends State<SignupPage> {
           OutlinedButton(
               onPressed: () async {
                 String username = controller_username.text;
-                
                 String password = controller_password.text;
-                
                 String confirm_password = controller_confirm_password.text;
                 
-
                 if (password != confirm_password) {
                   print("Password and Confirm Password do not match.");
                   return;
@@ -163,9 +162,9 @@ class _SignupPageState extends State<SignupPage> {
                   "created_at": DateTime.now(),
                   "updated_at": DateTime.now(),
                 }).then((q) {
-                  print("Registered successfully.");
+                  print("Successfully.");
                 }).catchError((e) {
-                  print("Error registering.");
+                  print("Error.");
                 });
               },
               child: Text("Sign Up")),

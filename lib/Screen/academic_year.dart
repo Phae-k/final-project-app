@@ -17,13 +17,13 @@ class _AcademicYearState extends State<AcademicYear> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      backgroundColor: const Color.fromARGB(255, 208, 208, 208),
+      //backgroundColor: const Color.fromARGB(255, 208, 208, 208),
       
       appBar: AppBar(
         backgroundColor: Colors.white,
        
-        surfaceTintColor: Colors.white, // Removes the grey tint on scroll
-        scrolledUnderElevation: 0,      // Keeps elevation at 0 when scrolling
+        surfaceTintColor: Colors.white, 
+        scrolledUnderElevation: 0,     
         
         elevation: 0,
         leading: IconButton(

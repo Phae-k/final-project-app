@@ -1,6 +1,6 @@
 ... base 
 
-flutter build web --release --base-href /final_project_app/
+flutter build web --release --base-href /final-project-app/
 
 
 ...

@@ -61,17 +61,17 @@ class _AccountPageState extends State<AccountPage> {
             children: <Widget>[
 
               SizedBox(
-                   height: 150, 
+                   height: 130, //150
                    child: gtr_logo),
                    SizedBox(
-                   height: 20
+                   height: 10 // 15
                 ),
              
                SizedBox(height: 1),
               Text(
                 "ដេប៉ាតឺម៉ង់ ទេព្យកោសល្យទូរគមនាគមន៍ និងបណ្ដាញ ",
                 style: TextStyle(
-                  fontSize: 20, //22
+                  fontSize: 18, //20  //22
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF8B0000), // Dark Red
                 ),
@@ -81,7 +81,7 @@ class _AccountPageState extends State<AccountPage> {
               Text(
                 "DEPARTMENT OF TELECOMMUNICATIONS AND NETWORK ENGINEERING",
                 style: TextStyle(
-                  fontSize: 10, //12
+                  fontSize: 8,//10  //12
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF8B0000),
                 ),
@@ -106,7 +106,7 @@ class _AccountPageState extends State<AccountPage> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 20),
 
               Text(
                 "The first social education network in the Kingdom of Cambodia. "
@@ -128,7 +128,7 @@ class _AccountPageState extends State<AccountPage> {
                     ),
                     child: Text("Teacher Account")),
 
-                    SizedBox(height: 15),
+                    SizedBox(height: 10),
 
               OutlinedButton(
                 onPressed: () {
@@ -142,7 +142,7 @@ class _AccountPageState extends State<AccountPage> {
                     ),
                     child: Text("Student Account",)),
 
-              SizedBox(height: 40),
+              SizedBox(height: 20),
 
               Text(
                 "© 2026 Auxswot",

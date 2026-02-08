@@ -1,3 +1,5 @@
+import 'package:final_project/Screen/deputyHeadDepartment.dart';
+import 'package:final_project/Screen/headDepartment.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/Screen/academic_year.dart';
 import 'package:final_project/Screen/events.dart';
@@ -40,10 +42,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text(widget.title),
-      //   centerTitle: true,
-      // ),
+      
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -84,21 +83,22 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10),
             _buildManagementItem(
               context,
-              name: "SRENG SOKCHENDA",
+              name: "SRENG SOKCHENDA",  
               role: "Head of Department",
               image: 'assets/imageteacher.png',
-              //onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const DirectorProfilePage())),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HeadDepartmentPage())),
             ),
             _buildManagementItem(
               context, 
               name: "THOURN KOSORL", 
               role: " Deputy Head of Department", 
-              image: 'assets/imageteacher.png'
+              image: 'assets/imageteacher.png',
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const DeputyHeadDepartmentPage())),
               ),
 
             SizedBox(height: 50),
             Text(
-              "©2026 Department of Telecommunication and Network Engineering. All rights reserved.\nVersion 4.1.8\nby ENG SOPHEAK and HUN MEILY",
+              "©2026 Department of Telecommunication and Network Engineering. All rights reserved.\nVersion 4.1.8\nPowered by ENG SOPHEAK and HUN MEILY",
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.blue, fontSize: 12),
             ),

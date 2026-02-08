@@ -8,7 +8,7 @@ class PartnersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      backgroundColor: const Color.fromARGB(255, 238, 245, 242),
+      //backgroundColor: const Color.fromARGB(255, 238, 245, 242),
       
       appBar: AppBar(
         title: Text(title, style: const TextStyle(fontSize: 18, color: Colors.black)),
@@ -147,6 +147,7 @@ class PartnerDetailPage extends StatelessWidget {
           onPressed: () => Navigator.pop(context),
         ),
       ),
+      
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

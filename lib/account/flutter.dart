@@ -7,7 +7,7 @@ class FlutterCoursePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Flutter Course")),
-      body: const Center(child: Text("Welcome to the Flutter Course Page")),
+      body: const Center(child: Text("Welcome to the Flutter ")),
     );
   }
 }

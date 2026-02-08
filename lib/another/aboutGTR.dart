@@ -68,16 +68,16 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
                 SizedBox(height: 20),
 
             SizedBox(
-              height: 400, 
-              width: 489999999999900,
+              height: 300, 
+              width: 300,
               child: pic1
               ),
-              Text('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -'),
+              Text('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -'),
 
               Row(children: [
-                Text('Engineering Degree(5-year program):',
+                Text('Engineering Degree:',
                       style: TextStyle(
-                        fontSize: 15, color: Colors.black,
+                        fontSize: 14, color: Colors.black,
                       ),
                     ),
                     SizedBox(width: 20),
@@ -88,12 +88,12 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
                    ),
                    ],
                    ),
-                   SizedBox(height: 20),
+                   SizedBox(height: 10),
 
                    Row(children: [
-                    Text('Associate Degree in Technology (2-year program):',
+                    Text('Associate Degree in Technology:',
                       style: TextStyle(
-                        fontSize: 15, color: Colors.black,
+                        fontSize: 14, color: Colors.black,
                       ),
                     ),
 

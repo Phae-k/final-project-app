@@ -8,7 +8,7 @@ class NewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      //backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.white,
@@ -32,21 +32,13 @@ class NewsPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         children: [
 
-          // _buildNewsItem(
-          //   "សកម្មភាពក្លឹបសិក្សា ភាសាបរទេស",
-          //   "01/10/2025",
-          //   "assets/news5.png",
-          //   "https://yourlinkhere.com",
-          // ),
-          // _buildDivider(),
-          // _buildNewsItem(
-          //   "សកម្មភាពសិស្សានុសិស្ស ប្រកួតកីឡា",
-          //   "02/18/2025",
-          //   "assets/news4.png",
-          //   "https://yourlinkhere.com",
-          // ),
-
-
+          _buildNewsItem(
+            "សកម្មភាពប្រឡងបញ្ចប់ឆមាសទី​១",
+            "05/02/2026",
+            "assets/imagefinal.png",
+            "",
+          ),
+            _buildDivider(),
             _buildNewsItem(
             "ការបណ្តុះបណ្តាលវិធីសាស្ត្រ និងយុទ្ធវិធីសម្រាប់លោកគ្រូ អ្នកគ្រូ",
             "Last Wednesday at 11:11 AM",
