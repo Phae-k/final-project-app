@@ -17,7 +17,7 @@ class _AcademicYearState extends State<AcademicYear> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      backgroundColor: const Color.fromARGB(255, 185, 185, 188),
+      backgroundColor: const Color.fromARGB(255, 208, 208, 208),
       
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -46,21 +46,14 @@ class _AcademicYearState extends State<AcademicYear> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: <Widget>[
-            _buildDateCard("2025-2026", "01/10/2025", "04/07/2026"),
+            _buildDateCard("2025-2026", "01/10/2025", "**/**/2026"),
             const SizedBox(height: 16),
-            _buildDateCard("2025-2026", "23/7/2025", "1/1/2026"),
+            _buildDateCard("2024-2025", "07/10/2024", "02/07/2025"),
             const SizedBox(height: 16),
-            _buildDateCard("2024-2025", "1/11/2024", "1/10/2025"),
+            _buildDateCard("2023-2024", "05/12/2023", "07/08/2024"),
             const SizedBox(height: 16),
-            _buildDateCard("2025-2026", "23/7/2025", "1/1/2026"),
-            const SizedBox(height: 16),
-            _buildDateCard("2025-2026", "23/7/2025", "1/1/2026"),
-            const SizedBox(height: 16),
-            _buildDateCard("2025-2026", "23/7/2025", "1/1/2026"),
-            const SizedBox(height: 16),
-            _buildDateCard("2025-2026", "23/7/2025", "1/1/2026"),
-            const SizedBox(height: 16),
-            _buildDateCard("2023-2024", "1/12/2023", "30/9/2024"),
+            _buildDateCard("2022-2023", "20/02/2023", "07/11/2023"),
+        
           ],
         ),
       ),

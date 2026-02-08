@@ -27,9 +27,7 @@ class AboutGTRPage extends StatefulWidget {
   @override
   State<AboutGTRPage> createState() => _AboutGTRPageState();
 }
-
 class _AboutGTRPageState extends State<AboutGTRPage> {
-  
   
   Future<void> _downloadAsset(String assetPath, String fileName) async {
    
@@ -40,7 +38,7 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
       if (kIsWeb) {
         final blob = html.Blob([bytes]);
         final url = html.Url.createObjectUrlFromBlob(blob);
-        final anchor = html.AnchorElement(href: url)
+        final _ = html.AnchorElement(href: url)
           ..setAttribute("download", fileName)
           ..click();
         html.Url.revokeObjectUrl(url);
@@ -106,7 +104,6 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
                       label: const Text("Download"),
                    ),
                    ],),
-            
             ],
             
           ),

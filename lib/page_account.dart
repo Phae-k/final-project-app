@@ -1,4 +1,3 @@
-// scanner.dart
 import 'package:final_project/page_sigin.dart';
 import 'package:flutter/material.dart';
 
@@ -26,8 +25,6 @@ class MyApp extends StatelessWidget {
 class AccountPage extends StatefulWidget {
   const AccountPage({super.key, required this.title});
 
-  
-
   final String title;
 
   @override
@@ -37,8 +34,6 @@ class AccountPage extends StatefulWidget {
 class _AccountPageState extends State<AccountPage> {
   final gtr_logo = Image.asset('assets/gtr_logo.png');
   
-
-
   @override
   void initState() {
     super.initState();
@@ -52,11 +47,11 @@ class _AccountPageState extends State<AccountPage> {
     return Scaffold(
       backgroundColor: Colors.white,
     
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        toolbarHeight: 0, 
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.white,
+      //   elevation: 0,
+      //   toolbarHeight: 0, 
+      // ),
 
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
@@ -76,7 +71,7 @@ class _AccountPageState extends State<AccountPage> {
               Text(
                 "ដេប៉ាតឺម៉ង់ ទេព្យកោសល្យទូរគមនាគមន៍ និងបណ្ដាញ ",
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 20, //22
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF8B0000), // Dark Red
                 ),
@@ -86,23 +81,22 @@ class _AccountPageState extends State<AccountPage> {
               Text(
                 "DEPARTMENT OF TELECOMMUNICATIONS AND NETWORK ENGINEERING",
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 10, //12
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF8B0000),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 15), //20
 
               Text(
                 "DEPARTEMENT DE GENIE TÉLÉCOMS ET RÉSEAUX",
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 13, //16
                   fontWeight: FontWeight.w900,
                   letterSpacing: 0.5,
                 ),
                 textAlign: TextAlign.center,
               ),
-
 
               Text(
                 "GTR",
@@ -119,12 +113,12 @@ class _AccountPageState extends State<AccountPage> {
                 "Learn, research, share, test, read books and do other things",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 12, //14
                   color: Colors.grey,
                   height: 1.5,
                 ),
               ),
-              SizedBox(height: 40),
+              SizedBox(height: 30),
 
               OutlinedButton(
                 onPressed: () {},
@@ -148,38 +142,9 @@ class _AccountPageState extends State<AccountPage> {
                     ),
                     child: Text("Student Account",)),
 
-                    
-
-              
-
-                    
-
-
-             
-              // _buildAccountButton(
-              //   text: "Parent Account",
-              //   color: Colors.blue.shade700,
-              //   textColor: Colors.white,
-              // ),
-              // const SizedBox(height: 15),
-              // _buildAccountButton(
-              //   text: "Teacher Account",
-              //   color: Colors.grey.shade50,
-              //   textColor: Colors.black87,
-              //   showBorder: true,
-              // ),
-              // const SizedBox(height: 15),
-              // _buildAccountButton(
-              //   text: "Student Account",
-              //   color: Colors.grey.shade50,
-              //   textColor: Colors.black87,
-              //   showBorder: true,
-              // ),
-              
               SizedBox(height: 40),
 
-              // --- Footer ---
-              const Text(
+              Text(
                 "© 2026 Auxswot",
                 style: TextStyle(color: Colors.grey, fontSize: 12),
               ),

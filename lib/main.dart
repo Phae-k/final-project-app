@@ -69,7 +69,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
                 Image.asset(
                   'assets/gtr_logo.png',
-                  height: 60,
+                  height: 50,
                 ),
 
                 SizedBox(width: 15),
@@ -80,7 +80,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                     Text(
                       'DEPARTMENT OF TELECOMMUNICATIONS \nAND NETWORK ENGINEERING ',
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 10, //15
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
@@ -89,7 +89,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                     Text(
                       'DEPARTEMENT DE GENIE TÉLÉCOMS ET RÉSEAUX',
                        style: TextStyle(
-                        fontSize: 13,
+                        fontSize: 10, //13
                         color: Colors.black54,
                       ),
                     ),

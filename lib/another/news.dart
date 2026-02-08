@@ -8,13 +8,12 @@ class NewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.white,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        
         surfaceTintColor: Colors.white,
         scrolledUnderElevation: 0,
-        // -----------------------------
+      
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
@@ -27,53 +26,12 @@ class NewsPage extends StatelessWidget {
             fontSize: 24,
           ),
         ),
+
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         children: [
-           _buildNewsItem(
-            "ដេប៉ាតឺម៉ង់ទេពកោសល្យ​ ទូរគមនាគមន៍​ និងបណ្តាញ​ បានរៀបចំដំណេីរទស្សនកិច្ចសិក្សារបស់និស្សិតឆ្នាំទី៥​",
-            "Last Year at 11:11 AM",
-            "assets/gtrVisited.png",
-            "",
-          ),
-          _buildDivider(),
-           _buildNewsItem(
-            "ព្រឹត្តិការណ៍ Huawei Connect 2025 នៅទីក្រុងសៀងហៃ ប្រទេសចិន។​",
-            "Last Year at 07:40 AM",
-            "assets/china.png",
-            "",
-          ),
-          _buildDivider(),
-          _buildNewsItem(
-            "ការបណ្តុះបណ្តាលវិធីសាស្ត្រ និងយុទ្ធវិធីសម្រាប់លោកគ្រូ អ្នកគ្រូ",
-            "Last Wednesday at 11:11 AM",
-            "assets/bhdcbh.png",
-            "",
-          ),
-          _buildDivider(),
-          _buildNewsItem(
-            "និស្សិត​ សាស្ត្រាចារ្យ​ និងបុគ្គលិក​ ដេប៉ាតឺម៉ង់ទេពកោសល្យ​ ទូរគមនាគមន៍​ និងបណ្តាញ​ នៃវិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា​ បានចូលរួមព្យុះហយាត្រាគាំទ្ររាជរដ្ឋាភិបាលកម្ពុជា​ និងលេីកទឹកចិត្តកងទ័ពជួរមុខ",
-            "Jun 18 2025 at 11:06 AM",
-            "assets/hol.png",
-            "",
-          ),
-          
-          _buildDivider(),
-          _buildNewsItem(
-            "វីដេអូ ខ្លីពីក្លឹបMedia",
-            "06/14/2025",
-            "assets/class.png",
-            "",
-          ),
-          _buildDivider(),
-          _buildNewsItem(
-            "សកម្មភាព សិក្សា",
-            "02/18/2025",
-            "assets/study.png",
-            "",
-          ),
-          _buildDivider(),
+
           // _buildNewsItem(
           //   "សកម្មភាពក្លឹបសិក្សា ភាសាបរទេស",
           //   "01/10/2025",
@@ -87,6 +45,55 @@ class NewsPage extends StatelessWidget {
           //   "assets/news4.png",
           //   "https://yourlinkhere.com",
           // ),
+
+
+            _buildNewsItem(
+            "ការបណ្តុះបណ្តាលវិធីសាស្ត្រ និងយុទ្ធវិធីសម្រាប់លោកគ្រូ អ្នកគ្រូ",
+            "Last Wednesday at 11:11 AM",
+            "assets/bhdcbh.png",
+            "",
+          ),
+          _buildDivider(),
+
+           _buildNewsItem(
+            "វីដេអូ ខ្លីពីក្លឹបMedia",
+            "Last Week at 03:34PM",
+            "assets/class.png",
+            "",
+          ),
+
+          _buildDivider(),
+          _buildNewsItem(
+            "សកម្មភាព សិក្សា",
+            "Last Month at 03:34PM",
+            "assets/study.png",
+            "",
+          ),
+          _buildDivider(),  
+           _buildNewsItem(
+            "ដេប៉ាតឺម៉ង់ទេពកោសល្យ​ ទូរគមនាគមន៍​ និងបណ្តាញ​ បានរៀបចំដំណេីរទស្សនកិច្ចសិក្សារបស់និស្សិតឆ្នាំទី៥​",
+            "September 20 2025 at 11:11 AM",
+            "assets/gtrVisited.png",
+            "",
+          ),
+          _buildDivider(),
+           _buildNewsItem(
+            "ព្រឹត្តិការណ៍ Huawei Connect 2025 នៅទីក្រុងសៀងហៃ ប្រទេសចិន។​",
+            "Juky 27 2025 at 11:11 PM",
+            "assets/china.png",
+            "",
+          ),
+          _buildDivider(),
+        
+          _buildNewsItem(
+            "និស្សិត​ សាស្ត្រាចារ្យ​ និងបុគ្គលិក​ ដេប៉ាតឺម៉ង់ទេពកោសល្យ​ ទូរគមនាគមន៍​ និងបណ្តាញ​ នៃវិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា​ បានចូលរួមព្យុះហយាត្រាគាំទ្ររាជរដ្ឋាភិបាលកម្ពុជា​ និងលេីកទឹកចិត្តកងទ័ពជួរមុខ",
+            "Jun 18 2025 at 11:06 AM",
+            "assets/hol.png",
+            "",
+          ),
+          
+          _buildDivider(),
+         
         ],
       ),
     );
