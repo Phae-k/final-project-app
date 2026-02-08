@@ -46,12 +46,6 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-    
-      // appBar: AppBar(
-      //   backgroundColor: Colors.white,
-      //   elevation: 0,
-      //   toolbarHeight: 0, 
-      // ),
 
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
@@ -71,12 +65,11 @@ class _AccountPageState extends State<AccountPage> {
               Text(
                 "ដេប៉ាតឺម៉ង់ ទេព្យកោសល្យទូរគមនាគមន៍ និងបណ្ដាញ ",
                 style: TextStyle(
-                  fontSize: 18, //20  //22
+                  fontSize: 16, //18 //20  //22
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF8B0000), // Dark Red
                 ),
               ),
-
 
               Text(
                 "DEPARTMENT OF TELECOMMUNICATIONS AND NETWORK ENGINEERING",
@@ -118,7 +111,7 @@ class _AccountPageState extends State<AccountPage> {
                   height: 1.5,
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 25),
 
               OutlinedButton(
                 onPressed: () {},
@@ -128,7 +121,7 @@ class _AccountPageState extends State<AccountPage> {
                     ),
                     child: Text("Teacher Account")),
 
-                    SizedBox(height: 10),
+                    SizedBox(height: 8),
 
               OutlinedButton(
                 onPressed: () {
