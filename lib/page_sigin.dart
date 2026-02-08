@@ -35,25 +35,6 @@ class _SigninPageState extends State<SigninPage> {
           children: <Widget>[
 
             Spacer(),
-           
-            // Text(
-             
-            //   'DEPARTMENT OF TELECOMMUNICATIONS AND NETWORK ENGINEERING ',
-            //   style: TextStyle(
-            //     fontSize: 15,
-            //     fontWeight: FontWeight.bold,
-            //     color: Colors.black,
-            //   ),
-            // ),
-            // Text(
-            //   'DEPARTEMENT DE GENIE TÉLÉCOMS ET RÉSEAUX',
-            //   style: TextStyle(
-            //     fontSize: 13,
-            //     color: Colors.black54,
-            //   ),
-            // ),
-            // Spacer(),
-            
             Row(
               children: [
                 Spacer(),

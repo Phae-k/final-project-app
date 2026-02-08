@@ -71,7 +71,7 @@ class NewsPage extends StatelessWidget {
           _buildDivider(),
            _buildNewsItem(
             "ព្រឹត្តិការណ៍ Huawei Connect 2025 នៅទីក្រុងសៀងហៃ ប្រទេសចិន។​",
-            "Juky 27 2025 at 11:11 PM",
+            "June 27 2025 at 11:11 PM",
             "assets/china.png",
             "",
           ),

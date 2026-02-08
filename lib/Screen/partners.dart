@@ -9,7 +9,6 @@ class PartnersPage extends StatelessWidget {
     return Scaffold(
 
       //backgroundColor: const Color.fromARGB(255, 238, 245, 242),
-      
       appBar: AppBar(
         title: Text(title, style: const TextStyle(fontSize: 18, color: Colors.black)),
         backgroundColor: Colors.white,
@@ -29,13 +28,14 @@ class PartnersPage extends StatelessWidget {
           _buildPartnerCard(
             context,
             'assets/huawei.png',
-            'Huawei – International Telecom Company',
+            'Huawei - International Telecom Company',
             PartnerDetailPage(
               imageUrl: 'assets/huawei.png',
-              title: 'Huawei – International Telecom Company',
+              title: 'Huawei - International Telecom Company',
             ),
           ),
-          const SizedBox(height: 12),
+
+          SizedBox(height: 12),
           _buildPartnerCard(
             context,
             'assets/utp.png',
@@ -65,11 +65,12 @@ class PartnersPage extends StatelessWidget {
               title: 'Institut Miness-Télécom',
             ),
           ),
+
           const SizedBox(height: 12),
           _buildPartnerCard(
             context,
             'assets/ig.png',
-            'Sup Galilée – Ingénieurs ',
+            'Sup Galilée - Ingénieurs ',
             const PartnerDetailPage(
               imageUrl: 'assets/ig.png',
               title: 'Sup Galilée – Ingénieurs',

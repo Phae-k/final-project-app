@@ -12,15 +12,14 @@ class NotificationPage extends StatelessWidget {
       {
         "kh": "ការចូលរៀនសម្រាប់​​​ឆមាសទី​២ ឆ្នាំទី​២​​ ដល់​ឆ្នាំទី៥(១៦/កម្ភុះ/២០២៦)",
         "en": "Enrollment for Semester 2, Year 2 to Year 5 (February 16, 2026)",
-        "date": "Feb 06"
+        "date": "February 06"
       },
     
       {
         "kh": "ប្រឡងបញ្ចប់ឆមាសទី​១​​​ ឆ្នាំទី​២​​ ដល់​ឆ្នាំទី៥(០៣-០៤/កម្ភុះ/២០២៦)",
         "en": "Final exam Semester I for year 2 to year 5 (03-04/Feb/2026)",
-        "date": "Jan 24"
+        "date": "January 24"
       },
-
 
      {
         "kh": "ការចូលរៀននឹងប្រព្រឹត្តទៅចាប់ពីថ្ងៃទី០៧ ខែតុលា ឆ្នាំ២០២៥ តាមកាលវិភាគកំណត់",
@@ -31,7 +30,7 @@ class NotificationPage extends StatelessWidget {
        {
         "kh": "ប្រឡងឆមាសទី2 នៅថ្ងៃទី 01-02 ខែ កក្កដា ឆ្នាំ២០២៥ ឆ្នាំទី​២​​ ដល់​ឆ្នាំទី៤",
         "en": "Semester 2 examination on July 01–02, 2025",
-        "date": "Jun 12 2023"
+        "date": "June 12 2025"
       },
 
       {
@@ -56,9 +55,8 @@ class NotificationPage extends StatelessWidget {
       {
         "kh": "ប្រឡងឆមាសទី១ថ្ងៃទី១៩,២០ មីនា ២០២៤",
         "en": "Semester 1 examination on Feb 18–20, 2024, year2",
-        "date": "Feb 20 2024"
+        "date": "February 20 2024"
       },
-
 
       {
         "kh": "ការចូលរៀននឹងប្រព្រឹត្តទៅចាប់ពីថ្ងៃទី៥ ធ្នូ ២០២៣  ឆ្នាំទី​២",
@@ -69,13 +67,13 @@ class NotificationPage extends StatelessWidget {
       {
         "kh": "ប្រឡងឆមាសទី2 នៅថ្ងៃទី06-07 ខែ វិឆ្ឆិកា ឆ្នាំ២០២៣",
         "en": "Semester 2 examination on November 26–27, 2023, year1",
-        "date": "Jun 12 2023"
+        "date": "June 12 2023"
       },
 
       {
         "kh": "ប្រឡងឆមាសទី១ នៅថ្ងៃទី26-27 ខែ កក្កដា ឆ្នាំ២០២៣",
         "en": "Semester 1 examination on July 26–27, 2023, year1",
-        "date": "Jun 12 2023"
+        "date": "June 12 2023"
       },
 
       {

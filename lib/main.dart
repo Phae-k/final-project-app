@@ -60,13 +60,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     return Scaffold(
       body: Column(
         children: [
-          
           if (_selectedIndex != 1)
           Container(
             padding: EdgeInsets.all(16.0),
             child: Row(
               children: [
-
                 Image.asset(
                   'assets/gtr_logo.png',
                   height: 50,
@@ -98,7 +96,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               
                 if (_selectedIndex == 0) ...[
                   Spacer(), 
-                  
                   IconButton(
                     icon: Icon(Icons.notifications_active, color: Colors.deepPurple),
                     onPressed: () {
@@ -111,13 +108,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               ],
             ),
           ),
-
         Expanded(
           child: _pages[_selectedIndex],
         ),
       ],
     ),
-    
     bottomNavigationBar: BottomNavigationBar(
       currentIndex: _selectedIndex,
       onTap: _onItemTapped,

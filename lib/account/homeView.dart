@@ -1,3 +1,4 @@
+import 'package:final_project/Screen/notification.dart';
 import 'package:flutter/material.dart';
 import 'semesterI.dart'; 
 import 'flutter.dart'; 
@@ -45,7 +46,7 @@ class HomeView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              _buildHeader(),
+              _buildHeader(context),
               const SizedBox(height: 25),
               
               _buildSemesterList(context), 
@@ -65,7 +66,6 @@ class HomeView extends StatelessWidget {
       ),
     );
   }
-
   
   Widget _buildSemesterList(BuildContext context) {
     return SizedBox(
@@ -152,18 +152,32 @@ class HomeView extends StatelessWidget {
     );
   }
 
-  Widget _buildHeader() {
-    return const Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+
+Widget _buildHeader(BuildContext context) {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+      const Column(
+        crossAxisAlignment: CrossAxisAlignment.start, 
+        children: [
           Text('Welcome back!', style: TextStyle(color: Colors.grey)),
-          Text('Student App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-        ]),
-        Icon(Icons.notifications_outlined, size: 30),
-      ],
-    );
-  }
+          Text('Student App', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold
+          )),
+        ]
+      ),
+      
+      IconButton(
+        icon: const Icon(Icons.notifications_outlined, size: 30),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const NotificationPage(title: 'Notification')),
+          );
+        },
+      ),
+    ],
+  );
+}
 
   Widget _buildReadingHeader() {
     return Row(
