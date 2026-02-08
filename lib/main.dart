@@ -1,10 +1,11 @@
-import 'package:final_project/Screen/notification..dart';
+import 'package:final_project/Screen/notification.dart';
 import 'package:final_project/another/more_page.dart';
 import 'package:final_project/page_account.dart';
 import 'package:final_project/page_home.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/firebase_options.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -65,6 +66,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             padding: EdgeInsets.all(16.0),
             child: Row(
               children: [
+
                 Image.asset(
                   'assets/gtr_logo.png',
                   height: 50,
@@ -74,7 +76,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    
+
                     Text(
                       'DEPARTMENT OF TELECOMMUNICATIONS \nAND NETWORK ENGINEERING ',
                       style: TextStyle(
@@ -108,11 +110,13 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               ],
             ),
           ),
+
         Expanded(
           child: _pages[_selectedIndex],
         ),
       ],
     ),
+
     bottomNavigationBar: BottomNavigationBar(
       currentIndex: _selectedIndex,
       onTap: _onItemTapped,
