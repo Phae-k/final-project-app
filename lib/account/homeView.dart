@@ -1,7 +1,7 @@
 import 'package:final_project/Screen/notification.dart';
 import 'package:flutter/material.dart';
 import 'semesterI.dart'; 
-import 'flutter.dart'; 
+import 'flutter_course.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +33,7 @@ class HomeView extends StatelessWidget {
     {'name': 'Semester 2', 'year': 'Year 4'},
     {'name': 'Semester 1', 'year': 'Year 5'},
     {'name': 'Semester 2', 'year': 'Year 5'},
+
   ];
 
   @override
@@ -51,13 +52,13 @@ class HomeView extends StatelessWidget {
               
               _buildSemesterList(context), 
               
-              const SizedBox(height: 30),
-              const Text('Semester Courses', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 15),
+              SizedBox(height: 30),
+              Text('Semester Courses', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              SizedBox(height: 15),
               
               _buildCourseCarousel(context), 
               
-              const SizedBox(height: 30),
+              SizedBox(height: 30),
               _buildReadingHeader(),
               _buildReadingItem(),
             ],
@@ -104,7 +105,6 @@ class HomeView extends StatelessWidget {
       ),
     );
   }
-
   
   Widget _buildCourseCarousel(BuildContext context) {
     final List<Map<String, String>> courses = [
@@ -151,8 +151,7 @@ class HomeView extends StatelessWidget {
       ),
     );
   }
-
-
+  
 Widget _buildHeader(BuildContext context) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,

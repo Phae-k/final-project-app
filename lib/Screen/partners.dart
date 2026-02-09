@@ -8,17 +8,16 @@ class PartnersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      //backgroundColor: const Color.fromARGB(255, 238, 245, 242),
       appBar: AppBar(
         title: Text(title, style: const TextStyle(fontSize: 18, color: Colors.black)),
         backgroundColor: Colors.white,
-       
         surfaceTintColor: Colors.white,
         scrolledUnderElevation: 0,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          icon: Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () => Navigator.of(context).pop(),
+
         ),
       ),
       
@@ -45,17 +44,8 @@ class PartnersPage extends StatelessWidget {
               title: 'Universit Teknologi Petronas',
             ),
           ),
-          const SizedBox(height: 12),
-          _buildPartnerCard(
-            context,
-            'assets/tokyo.png',
-            'Tokyo Institute of Technology – Japan',
-            const PartnerDetailPage(
-              imageUrl: 'assets/tokyo.png',
-              title: 'Tokyo Institute of Technology – Japan',
-            ),
-          ),
-          const SizedBox(height: 12),
+          SizedBox(height: 12),
+
           _buildPartnerCard(
             context,
             'assets/IMT.png',
@@ -66,7 +56,18 @@ class PartnersPage extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 12),
+          SizedBox(height: 12),
+          _buildPartnerCard(
+            context,
+            'assets/tokyo.png',
+            'Tokyo Institute of Technology – Japan',
+            const PartnerDetailPage(
+              imageUrl: 'assets/tokyo.png',
+              title: 'Tokyo Institute of Technology – Japan',
+            ),
+          ),
+          SizedBox(height: 12),
+          
           _buildPartnerCard(
             context,
             'assets/ig.png',

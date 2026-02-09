@@ -8,7 +8,7 @@ class NewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.white,
+      
       appBar: AppBar(
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.white,
@@ -34,14 +34,14 @@ class NewsPage extends StatelessWidget {
 
           _buildNewsItem(
             "សកម្មភាពប្រឡងបញ្ចប់ឆមាសទី​១",
-            "05/02/2026",
+            "Last Wednesday at 05:11 PM",
             "assets/imagefinal.png",
             "",
           ),
             _buildDivider(),
             _buildNewsItem(
             "ការបណ្តុះបណ្តាលវិធីសាស្ត្រ និងយុទ្ធវិធីសម្រាប់លោកគ្រូ អ្នកគ្រូ",
-            "Last Wednesday at 11:11 AM",
+            "Last Week at 11:11 AM",
             "assets/bhdcbh.png",
             "",
           ),

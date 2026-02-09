@@ -54,8 +54,8 @@ class _HolidayPageState extends State<HolidayPage> {
               fontSize: 15,
               fontWeight: FontWeight.bold,
               color: Colors.black,
-                      ),
-              ),
+              ),),
+              
             SizedBox(height: 10),
             Text("There's no holiday available for now, "),
             SizedBox(height: 10),

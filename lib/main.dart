@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Sign In Page',
+      title: 'Information Systems ',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 104, 52, 237)),
         useMaterial3: true,
@@ -60,9 +60,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
    Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+
         children: [
           if (_selectedIndex != 1)
           Container(
+            color: Colors.transparent,
             padding: EdgeInsets.all(16.0),
             child: Row(
               children: [
@@ -80,7 +82,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                     Text(
                       'DEPARTMENT OF TELECOMMUNICATIONS \nAND NETWORK ENGINEERING ',
                       style: TextStyle(
-                        fontSize: 10, //15
+                        fontSize: 10, 
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
@@ -89,7 +91,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                     Text(
                       'DEPARTEMENT DE GENIE TÉLÉCOMS ET RÉSEAUX',
                        style: TextStyle(
-                        fontSize: 10, //13
+                        fontSize: 10, 
                         color: Colors.black54,
                       ),
                     ),
@@ -121,7 +123,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
       currentIndex: _selectedIndex,
       onTap: _onItemTapped,
       items: [
-
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Account'),
         BottomNavigationBarItem(icon: Icon(Icons.menu), label: 'More'),

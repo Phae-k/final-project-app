@@ -54,8 +54,6 @@ class _FeedBackPageState extends State<FeedBackPage> {
             Text("មិនមានការចូលរួមយោបល់ "),
             Text("សូមធ្វើការចូលគណនីដើម្បីចូលរួមមតិយោបល់"),
 
-
-
           ],
         ),
       ), 

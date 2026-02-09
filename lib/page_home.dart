@@ -97,11 +97,44 @@ class _HomePageState extends State<HomePage> {
               ),
 
             SizedBox(height: 50),
-            Text(
-              "©2026 Department of Telecommunication and Network Engineering. All rights reserved.\nVersion 4.1.8\nPowered by ENG SOPHEAK and HUN MEILY",
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontSize: 12),
+
+            Row(
+              children: [
+                Text(
+                  "      ©2026 Departement de Genie Télécoms et Réseaux. Tous droits réservés.",
+                   textAlign: TextAlign.center,
+                   style: TextStyle(color: Colors.grey, fontSize: 11),
             ),
+              ],
+            ),
+
+            Row(
+              children: [
+                Text(
+              "      Version 4.1.8",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.grey, fontSize: 12),
+            ),
+              ],
+            ),
+             Row(
+              children: [
+                Text(
+              "      Propulsé par", 
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.grey,  fontSize: 12),
+
+            ),
+            Text(
+              " Group 11",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 12),
+
+            ),
+            
+              ],
+            ),
+            
             SizedBox(height: 20),
           ],
         ),

@@ -91,19 +91,18 @@ class NotificationPage extends StatelessWidget {
     ];
 
     return Scaffold(
-      //backgroundColor: Colors.white,
+  
       appBar: AppBar(
         backgroundColor: Colors.white,
-        
         surfaceTintColor: Colors.white, 
         scrolledUnderElevation: 0,     
        
-        
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.black, size: 28),
+          icon: const Icon(Icons.arrow_back, color: Colors.black, size: 20),
           onPressed: () => Navigator.of(context).pop(),
         ),
+
         title: Text(
           title,
           style: const TextStyle(

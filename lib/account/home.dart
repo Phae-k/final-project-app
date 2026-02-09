@@ -38,7 +38,7 @@ class HomeAccPage extends StatelessWidget {
             Navigator.maybePop(context);
           },
         ),
-        // Fix: Added 'actions' property for the right-side button
+       
         // actions: [
         //   IconButton(
         //     icon: const Icon(Icons.menu, color: Colors.black),

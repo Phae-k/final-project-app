@@ -21,7 +21,7 @@ class HeadDepartmentPage extends StatelessWidget {
 
         title: const Text(
           "Management Team",
-          style: TextStyle(color: Colors.black, //fontWeight: FontWeight.bold
+          style: TextStyle(color: Colors.black, 
           ),
         ),
       ),

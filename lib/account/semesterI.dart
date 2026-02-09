@@ -5,9 +5,11 @@ class SemesterOnePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(title: const Text("Semester I")),
       body: const Center(child: Text("Welcome to Semester I Page")),
+
     );
   }
 }

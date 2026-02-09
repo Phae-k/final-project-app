@@ -28,7 +28,7 @@ class _MorePageState extends State<MorePage> {
   void _showLanguageDialog(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => StatefulBuilder( // Allows the dialog UI to update
+      builder: (context) => StatefulBuilder( 
         builder: (context, setDialogState) {
           
           return AlertDialog(
@@ -89,7 +89,7 @@ class _MorePageState extends State<MorePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: const Color.fromARGB(255, 246, 247, 245),
+      
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -190,13 +190,33 @@ class _MorePageState extends State<MorePage> {
                 ),
               ),
 
-                Text(
+              Row(
+                children: [
+                  Text(
                   isEnglish 
-                    ? "©2026 Department of Telecommunication and Network Engineering. All rights reserved.\nVersion 4.1.8"
-                    : "©២០២៦ ដេប៉ាតឺម៉ង់ ទេព្យកោសល្យទូរគមនាគមន៍ និងបណ្ដាញ ។ រក្សាសិទ្ធិគ្រប់យ៉ាង\nជំនាន់ ៤.១.៨",
+                    ? "©2026 Department of Telecommunication and Network Engineering. All rights reserved."
+                    : "©២០២៦ ដេប៉ាតឺម៉ង់ ទេព្យកោសល្យទូរគមនាគមន៍ និងបណ្ដាញ ។ រក្សាសិទ្ធិគ្រប់យ៉ាង",
                   textAlign: TextAlign.center, 
-                  style: TextStyle(color: Colors.grey, fontSize: 12)
+                  style: TextStyle(color: Colors.grey, fontSize: 11)
                 ),
+
+                ],
+              ),
+
+              Row(
+                children: [
+                  Text(
+                  isEnglish 
+                    ? "Version 4.1.8"
+                    : "ជំនាន់ ៤.១.៨",
+                  textAlign: TextAlign.center, 
+                  style: TextStyle(color: Colors.grey, fontSize: 11)
+                ),
+                
+                ],
+              ),
+
+                
               
             ],
           ),

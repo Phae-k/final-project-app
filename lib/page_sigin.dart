@@ -1,16 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:final_project/account/board.dart';
-//import 'package:final_project/account/board.dart';
-//import 'package:final_project/account/home.dart';
-//import 'package:final_project/account/home.dart';
-//import 'package:final_project/another/more_page.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/page_signup.dart';
 
 class SigninPage extends StatefulWidget {
   const SigninPage({super.key, required this.title});
   final String title;
-  
+
 
   @override
   State<SigninPage> createState() => _SigninPageState();

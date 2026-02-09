@@ -68,7 +68,7 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
                 SizedBox(height: 20),
 
             SizedBox(
-              height: 300, 
+              height: 400, 
               width: 300,
               child: pic1
               ),
@@ -88,6 +88,7 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
                    ),
                    ],
                    ),
+
                    SizedBox(height: 10),
 
                    Row(children: [
