@@ -194,7 +194,7 @@ class _MorePageState extends State<MorePage> {
                 children: [
                   Text(
                   isEnglish 
-                    ? "©2026 ©2026 Departement de Genie Télécoms et Réseaux, Tous droits réservés."
+                    ? "©2026 Departement de Genie Télécoms et Réseaux, Tous droits réservés."
                     : "©២០២៦ ដេប៉ាតឺម៉ង់ ទេព្យកោសល្យទូរគមនាគមន៍ និងបណ្ដាញ  រក្សាសិទ្ធិគ្រប់បែបយ៉ាង",
                   textAlign: TextAlign.center, 
                   style: TextStyle(color: Colors.grey, fontSize: 10)
