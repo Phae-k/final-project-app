@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 104, 52, 237)),
         useMaterial3: true,
       ),
-     
       home: const MainNavigationScreen(),
     );
   }

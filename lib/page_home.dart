@@ -101,9 +101,9 @@ class _HomePageState extends State<HomePage> {
             Row(
               children: [
                 Text(
-                  "      ©2026 Departement de Genie Télécoms et Réseaux. Tous droits réservés.",
+                  "      ©2026 Departement de Genie Télécoms et Réseaux, Tous droits réservés.",
                    textAlign: TextAlign.center,
-                   style: TextStyle(color: Colors.grey, fontSize: 11),
+                   style: TextStyle(color: Colors.grey, fontSize: 10),
             ),
               ],
             ),
@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                 Text(
               "      Version 4.1.8",
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey, fontSize: 12),
+              style: TextStyle(color: Colors.grey, fontSize: 10),
             ),
               ],
             ),
@@ -122,20 +122,20 @@ class _HomePageState extends State<HomePage> {
                 Text(
               "      Propulsé par", 
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey,  fontSize: 12),
+              style: TextStyle(color: Colors.grey,  fontSize: 10),
 
             ),
             Text(
               " Group 11",
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 12),
+              style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold, fontSize: 10),
 
             ),
             
               ],
             ),
             
-            SizedBox(height: 20),
+            
           ],
         ),
       ),
