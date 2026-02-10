@@ -53,7 +53,27 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
     final pic1 = Image.asset('assets/network.png');
 
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white, 
+        scrolledUnderElevation: 0,     
+        
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new_sharp, color: Colors.black, size: 18),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(
+          widget.title,
+          style: const TextStyle(
+            color: Colors.black,
+            fontSize: 18,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        centerTitle: false,
+        titleSpacing: 0,
+      ),
       body: Center(
         child: SingleChildScrollView( 
           child: Column(
@@ -66,14 +86,13 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
                 ),),
 
                 SizedBox(height: 20),
-
             SizedBox(
               height: 400, 
-              width: 300,
+              width: 400,
               child: pic1
               ),
               Text('-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -'),
-
+              
               Row(children: [
                 Text('Engineering Degree:',
                       style: TextStyle(
@@ -88,9 +107,7 @@ class _AboutGTRPageState extends State<AboutGTRPage> {
                    ),
                    ],
                    ),
-
                    SizedBox(height: 10),
-
                    Row(children: [
                     Text('Associate Degree in Technology:',
                       style: TextStyle(

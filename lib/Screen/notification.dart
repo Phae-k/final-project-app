@@ -28,13 +28,13 @@ class NotificationPage extends StatelessWidget {
       },
 
        {
-        "kh": "ប្រឡងឆមាសទី2 នៅថ្ងៃទី 01-02 ខែ កក្កដា ឆ្នាំ២០២៥ ឆ្នាំទី​២​​ ដល់​ឆ្នាំទី៤",
+        "kh": "ប្រឡងបញ្ចប់ឆមាសទី2 នៅថ្ងៃទី 01-02 ខែ កក្កដា ឆ្នាំ២០២៥ ឆ្នាំទី​២​​ ដល់​ឆ្នាំទី៤",
         "en": "Semester 2 examination on July 01–02, 2025",
         "date": "June 12 2025"
       },
 
       {
-        "kh": "ប្រឡងឆមាសទី១ នៅថ្ងៃទី​០៤ ០៥ ខែ កម្ភុះ​ ឆ្នាំ២០២៥ ឆ្នាំទី​២​​ ដល់​ឆ្នាំទី៥",
+        "kh": "ប្រឡងបញ្ចប់ឆមាសទី១ នៅថ្ងៃទី​០៤ ០៥ ខែ កម្ភុះ​ ឆ្នាំ២០២៥ ឆ្នាំទី​២​​ ដល់​ឆ្នាំទី៥",
         "en": "Semester 1 examination on Febuary 04-05, 2025",
         "date": "January 30 2025"
       },
@@ -47,13 +47,13 @@ class NotificationPage extends StatelessWidget {
 
 
       {
-        "kh": "ប្រឡងឆមាសទី២ នៅថ្ងៃទី ០៦-០៧ ខែ សីហា ឆ្នាំ២០២៤",
+        "kh": "ប្រឡងបញ្ចប់ឆមាសទី២ នៅថ្ងៃទី ០៦-០៧ ខែ សីហា ឆ្នាំ២០២៤",
         "en": "Semester 2 examination on August 06-07, 2023, year2",
         "date": "July 30 2024"
       },
 
       {
-        "kh": "ប្រឡងឆមាសទី១ថ្ងៃទី១៩,២០ មីនា ២០២៤",
+        "kh": "ប្រឡងបញ្ចប់ឆមាសទី១ថ្ងៃទី១៩,២០ មីនា ២០២៤",
         "en": "Semester 1 examination on Feb 18–20, 2024, year2",
         "date": "February 20 2024"
       },
@@ -65,13 +65,13 @@ class NotificationPage extends StatelessWidget {
       },
 
       {
-        "kh": "ប្រឡងឆមាសទី2 នៅថ្ងៃទី06-07 ខែ វិឆ្ឆិកា ឆ្នាំ២០២៣",
+        "kh": "ប្រឡងបញ្ចប់ឆមាសទី2 នៅថ្ងៃទី06-07 ខែ វិឆ្ឆិកា ឆ្នាំ២០២៣",
         "en": "Semester 2 examination on November 26–27, 2023, year1",
         "date": "June 12 2023"
       },
 
       {
-        "kh": "ប្រឡងឆមាសទី១ នៅថ្ងៃទី26-27 ខែ កក្កដា ឆ្នាំ២០២៣",
+        "kh": "ប្រឡងបញ្ចប់ឆមាសទី១ នៅថ្ងៃទី26-27 ខែ កក្កដា ឆ្នាំ២០២៣",
         "en": "Semester 1 examination on July 26–27, 2023, year1",
         "date": "June 12 2023"
       },
@@ -96,10 +96,9 @@ class NotificationPage extends StatelessWidget {
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.white, 
         scrolledUnderElevation: 0,     
-       
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.black, size: 20),
+          icon: const Icon(Icons.arrow_back_ios_new, color: Colors.black, size: 18),
           onPressed: () => Navigator.of(context).pop(),
         ),
 
@@ -107,7 +106,7 @@ class NotificationPage extends StatelessWidget {
           title,
           style: const TextStyle(
             color: Colors.black,
-            fontSize: 22,
+            fontSize: 18,
             fontWeight: FontWeight.w400,
           ),
         ),

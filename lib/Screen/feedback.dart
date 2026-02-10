@@ -43,8 +43,27 @@ class _FeedBackPageState extends State<FeedBackPage> {
   Widget build(BuildContext context) {
    
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white, 
+        scrolledUnderElevation: 0,     
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new_outlined, color: Colors.black, size: 18),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(
+          widget.title,
+          style: const TextStyle(
+            color: Colors.black,
+            fontSize: 18,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        centerTitle: false,
+        titleSpacing: 0,
       ),
+      
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

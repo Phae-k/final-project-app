@@ -7,33 +7,49 @@ class PartnersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       appBar: AppBar(
-        title: Text(title, style: const TextStyle(fontSize: 18, color: Colors.black)),
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.white,
         scrolledUnderElevation: 0,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
+          icon: const Icon(Icons.arrow_back_ios, color: Colors.black, size: 18),
           onPressed: () => Navigator.of(context).pop(),
-
         ),
+        title: Text(
+          title, 
+          style: const TextStyle(
+            color: Colors.black,
+            fontSize: 18,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        centerTitle: false,
+        titleSpacing: 0,
       ),
-      
+
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: [
           _buildPartnerCard(
             context,
+            'assets/moeys.png',
+            'Ministry of Education, Youth and Sport',
+            const PartnerDetailPage(
+              imageUrl: 'assets/moeys.png',
+              title: 'Ministry of Education, Youth and Sport',
+            ),
+          ),
+          SizedBox(height: 12),
+          _buildPartnerCard(
+            context,
             'assets/huawei.png',
             'Huawei - International Telecom Company',
-            PartnerDetailPage(
+            const PartnerDetailPage(
               imageUrl: 'assets/huawei.png',
               title: 'Huawei - International Telecom Company',
             ),
           ),
-
           SizedBox(height: 12),
           _buildPartnerCard(
             context,
@@ -44,8 +60,7 @@ class PartnersPage extends StatelessWidget {
               title: 'Universit Teknologi Petronas',
             ),
           ),
-          SizedBox(height: 12),
-
+          const SizedBox(height: 12),
           _buildPartnerCard(
             context,
             'assets/IMT.png',
@@ -55,28 +70,47 @@ class PartnersPage extends StatelessWidget {
               title: 'Institut Miness-Télécom',
             ),
           ),
-
           SizedBox(height: 12),
           _buildPartnerCard(
             context,
-            'assets/tokyo.png',
-            'Tokyo Institute of Technology – Japan',
+            'assets/toko.png',
+            'Tokyo Institute of Technology',
             const PartnerDetailPage(
-              imageUrl: 'assets/tokyo.png',
-              title: 'Tokyo Institute of Technology – Japan',
+              imageUrl: 'assets/toko.png',
+              title: 'Tokyo Institute of Technology',
+            ),
+          ),
+          SizedBox(height: 12),
+          _buildPartnerCard(
+            context,
+            'assets/igtech.png',
+            'IG Tech Group',
+            const PartnerDetailPage(
+              imageUrl: 'assets/igtech.png',
+              title: 'IG Tech Group',
+            ),
+          ),
+          SizedBox(height: 12),
+           _buildPartnerCard(
+            context,
+            'assets/cau.png',
+            'Chung-Ang University',
+            const PartnerDetailPage(
+              imageUrl: 'assets/cau.png',
+              title: 'Chung-Ang University',
+            ),
+          ),
+           _buildPartnerCard(
+            context,
+            'assets/inp.png',
+            'INP-ENSEEIHT',
+            const PartnerDetailPage(
+              imageUrl: 'assets/inp.png',
+              title: 'INP-ENSEEIHT',
             ),
           ),
           SizedBox(height: 12),
           
-          _buildPartnerCard(
-            context,
-            'assets/ig.png',
-            'Sup Galilée - Ingénieurs ',
-            const PartnerDetailPage(
-              imageUrl: 'assets/ig.png',
-              title: 'Sup Galilée – Ingénieurs',
-            ),
-          ),
         ],
       ),
     );
@@ -94,6 +128,13 @@ class PartnersPage extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(15),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.05),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
+            ),
+          ],
         ),
         child: Row(
           children: [
@@ -107,7 +148,8 @@ class PartnersPage extends StatelessWidget {
                 width: 150,
                 height: 130,
                 fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) => Container(color: Colors.grey, width: 150),
+                errorBuilder: (context, error, stackTrace) => 
+                    Container(color: Colors.grey[300], width: 150, child: const Icon(Icons.broken_image)),
               ),
             ),
             Expanded(
@@ -137,10 +179,8 @@ class PartnerDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        
         surfaceTintColor: Colors.white,
         scrolledUnderElevation: 0,
         elevation: 0,
@@ -149,7 +189,6 @@ class PartnerDetailPage extends StatelessWidget {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-      
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -158,9 +197,10 @@ class PartnerDetailPage extends StatelessWidget {
               imageUrl,
               width: double.infinity,
               fit: BoxFit.contain,
-              errorBuilder: (context, error, stackTrace) => Container(height: 200, color: Colors.grey),
+              errorBuilder: (context, error, stackTrace) => 
+                  Container(height: 200, color: Colors.grey[200], child: const Icon(Icons.broken_image, size: 50)),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(

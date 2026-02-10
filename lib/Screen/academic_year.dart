@@ -16,25 +16,20 @@ class _AcademicYearState extends State<AcademicYear> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      //backgroundColor: const Color.fromARGB(255, 208, 208, 208),
-      
       appBar: AppBar(
         backgroundColor: Colors.white,
-       
         surfaceTintColor: Colors.white, 
-        scrolledUnderElevation: 0,     
-        
+        scrolledUnderElevation: 0,      
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.black, size: 20),
+          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.black, size: 18),
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
           widget.title,
           style: const TextStyle(
             color: Colors.black,
-            fontSize: 22,
+            fontSize: 18,
             fontWeight: FontWeight.w400,
           ),
         ),
@@ -46,7 +41,7 @@ class _AcademicYearState extends State<AcademicYear> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: <Widget>[
-            _buildDateCard("2025-2026", "01/10/2025", "**/**/2026"),
+            _buildDateCard("2025-2026", "16/10/2025", "**/06/2026"),
             const SizedBox(height: 16),
             _buildDateCard("2024-2025", "07/10/2024", "02/07/2025"),
             const SizedBox(height: 16),

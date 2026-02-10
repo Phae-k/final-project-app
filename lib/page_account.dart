@@ -65,7 +65,7 @@ class _AccountPageState extends State<AccountPage> {
               Text(
                 "ដេប៉ាតឺម៉ង់ ទេព្យកោសល្យទូរគមនាគមន៍ និងបណ្ដាញ ",
                 style: TextStyle(
-                  fontSize: 16, //18 //20  //22
+                  fontSize: 16, 
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF8B0000), // Dark Red
                 ),

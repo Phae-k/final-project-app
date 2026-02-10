@@ -86,14 +86,14 @@ class _HomePageState extends State<HomePage> {
               name: "SRENG SOKCHENDA",  
               role: "Head of Department",
               image: 'assets/imageteacher.png',
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HeadDepartmentPage())),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HeadDepartmentPage(title: 'Management Team'))),
             ),
             _buildManagementItem(
               context, 
               name: "THOURN KOSORL", 
               role: " Deputy Head of Department", 
               image: 'assets/imageteacher.png',
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const DeputyHeadDepartmentPage())),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const DeputyHeadDepartmentPage(title: 'Management Team',))),
               ),
 
             SizedBox(height: 50),

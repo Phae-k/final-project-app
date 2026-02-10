@@ -39,7 +39,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      //backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -95,7 +95,7 @@ class HomeView extends StatelessWidget {
                   backgroundColor: index == 0 ? Colors.indigo : Colors.indigo.withOpacity(0.5),
                   child: Text('${index + 1}', style: const TextStyle(color: Colors.white)),
                 ),
-                const SizedBox(height: 5),
+                 SizedBox(height: 5),
                 Text(semesterData[index]['name']!, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
                 Text(semesterData[index]['year']!, style: const TextStyle(fontSize: 10, color: Colors.grey)),
               ],
